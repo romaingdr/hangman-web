@@ -1,10 +1,34 @@
+{{define "index"}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Go Web App</title>
 </head>
 <body>
-
+    <h1>Informations sur la promotion</h1>
+    <p>Nom : {{.Promo.Nom}}</p>
+    <p>Filière : {{.Promo.Filiere}}</p>
+    <p>Niveau : {{.Promo.Niveau}}</p>
+    <p>Nombre d'étudiants : {{.Promo.Nombre}}</p>
+    <h1>Liste des étudiants</h1>
+    <ul>
+        {{range .ListeEtudiant}}
+        <div class="étudiant">
+            <div class="info">
+                <h2>{{.Nom}} {{.Prenom}}</h2>
+                <h2>{{.Age}}</h2>
+            </div>
+            {{if eq .Sexe 1}}
+            <img src="/static/gender-male.svg" alt="Description de l'image" class="image-droite">
+            {{else}}
+            <img src="/static/gender-female.svg" alt="Description de l'image" class="image-droite">
+            {{end}}
+        </div>
+        {{end}}
+    </ul>
 </body>
 </html>
+{{end}}
