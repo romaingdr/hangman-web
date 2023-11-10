@@ -1,0 +1,32 @@
+{{define "userInit"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style2.css">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+<h1>Formulaire d'inscription</h1>
+<form action="/user/treatment" method="post">
+    <label for="nom">Nom:</label>
+    <input type="text" name="nom" required><br>
+
+    <label for="prenom">Prénom:</label>
+    <input type="text" name="prenom" required><br>
+
+    <label for="dateNaissance">Date de naissance:</label>
+    <input type="date" name="dateNaissance" required><br>
+
+    <label for="sexe">Sexe:</label>
+    <select name="sexe" required>
+        <option value="homme">Homme</option>
+        <option value="femme">Femme</option>
+    </select><br>
+
+    <input type="submit" value="Soumettre">
+</form>
+</body>
+</html>
+{{end}}

@@ -16,19 +16,19 @@ h1 {
     border: 3px solid black;
     border-radius: 10px;
     margin-bottom: 20px;
-    overflow: hidden; /* Pour contenir les éléments flottants */
+    overflow: hidden;
     width: 600px;
 }
 
 .info {
     padding-left: 20px;
     float: left;
-    width: 70%; /* Ajustez la largeur selon vos besoins */
+    width: 70%;
 }
 
 .image-droite {
     padding-right: 20px;
     padding-top: 8px;
     float: right;
-    width: 10%; /* Ajustez la largeur selon vos besoins */
+    width: 10%;
 }

@@ -1,0 +1,18 @@
+{{define "userDisplay"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style2.css">
+  <title>Données de l'utilisateur</title>
+</head>
+<body>
+<h1>Vos données personnelles</h1>
+<p class="centered-text"> Nom : {{.Nom}}</p>
+<p class="centered-text">Prénom : {{.Prenom}}</p>
+<p class="centered-text">Date de naissance : {{.DateNaissance}}</p>
+<p class="centered-text">Sexe : {{.Sexe}}</p>
+</body>
+</html>
+{{end}}
