@@ -47,7 +47,7 @@ func main() {
 	// CHALLENGE 1 : /promo
 	ListeEtudiant := []Etudiant{}
 	ListeEtudiant = append(ListeEtudiant, Etudiant{"RODRIGUES", "Cyril", 1, 22})
-	ListeEtudiant = append(ListeEtudiant, Etudiant{"MEDERREG", "Kheir-eddine", 0, 22})
+	ListeEtudiant = append(ListeEtudiant, Etudiant{"MEDERREG", "Kheir-eddine", 1, 22})
 	ListeEtudiant = append(ListeEtudiant, Etudiant{"PHILIPIERT", "Alan", 1, 22})
 
 	http.HandleFunc("/promo", func(w http.ResponseWriter, r *http.Request) {
